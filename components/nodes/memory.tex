@@ -1,39 +1,46 @@
 \node[root concept, fill=white]{
-    Memory
+        Memory
 }
 child{
-        node{
-                Repetition
-            }
-        child{
-                node(meta){
-                        Metacognition
-                    }
+                node{Long-Term Memory}
                 child{
-                        node{
-                                Goal\\(Pros)
-                            }
-                        child{
-                                node{
-                                        Appropriate Excitement
-                                    }
-                            }
-                    }
+                                node(rep){ Repetition }
+                                child{
+                                                node{Retrieval\\(Multiple and Short)}
+                                                child{
+                                                                node(active){ Active Thinking }
+                                                                child{
+                                                                                node(meta){ Metacognition }
+                                                                                child{
+                                                                                                node{ Goal\\(Pros) }
+                                                                                                child{
+                                                                                                                node{ Appropriate Excitement }
+                                                                                                        }
+                                                                                        }
+                                                                                child{
+                                                                                                node{ Problem Solving\\(Cons) }
+                                                                                                child{
+                                                                                                                node{ Appropriate Stress }
+                                                                                                        }
+                                                                                        }
+                                                                        }
+                                                                child{
+                                                                                node{ Explanation }
+                                                                        }
+                                                                child{
+                                                                                node{ Application }
+                                                                        }
+                                                        }
+                                        }
+                                child{
+                                                node(stim){Stimulus\\(Single)}
+                                                child{
+                                                                node(env){Environment\\(Long)}
+                                                        }
+                                        }
+                        }
                 child{
-                        node{
-                                Problem Solving\\(Cons)
-                            }
-                        child{
-                                node{
-                                        Appropriate Stress
-                                    }
-                            }
-                    }
-            }
-        child{
-                node(env){
-                        Environment
-                    }
-            }
-    }
+                                node{Oblivion}
+                        }
+        }
 ;
