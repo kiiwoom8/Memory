@@ -1,0 +1,18 @@
+\input{components/pramble.tex}
+
+\begin{document}
+\begin{inctext}
+    \begin{tikzpicture}
+        \begin{scope}[
+                mindmap,
+                grow cyclic,
+                concept color=black,
+                every node/.append style={concept, text width=4cm, font=\fontsize{10pt}{12pt}},
+                every child/.append style={level distance=6cm, concept color=beige}
+            ]
+            \input{components/nodes/memory.tex}
+        \end{scope}
+        \input{components/arrows.tex}
+    \end{tikzpicture}
+\end{inctext}
+\end{document}
